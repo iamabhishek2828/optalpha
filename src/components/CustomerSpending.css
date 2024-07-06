@@ -1,0 +1,106 @@
+/* src/components/CustomerSpending.css */
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.customer-spending-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  color: #007bff; /* Blue heading */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.filter-input {
+  padding: 12px 20px; /* Increased padding */
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 30px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow */
+}
+
+.spending-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.spending-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa; /* Light gray background */
+  border: 1px solid #e9ecef; /* Lighter gray border */
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spending-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow on hover */
+}
+
+.customer-name {
+  font-weight: 700;
+  color: #333; /* Dark gray text */
+}
+
+.customer-amount {
+  font-size: 16px;
+  color: #007bff; /* Blue text for amount */
+}
+
+.filter-icon {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #28a745; /* Green color for filter icon */
+}
