@@ -1,14 +1,16 @@
-/* src/components/CustomerSpending.css */
-
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Base Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f2f5; /* Light gray background */
-  color: #333; /* Dark gray text */
+  background-image: url('https://images.saymedia-content.com/.image/t_share/MTk0NDk5NDE1ODcxMTM3MTU1/javascript-animated-background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,12 +22,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff; /* White background */
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent background */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   width: 100%;
   animation: fadeIn 0.5s ease-in-out;
+  position: relative;
 }
 
 @keyframes fadeIn {
@@ -40,7 +43,7 @@ body {
 }
 
 h2 {
-  color: #007bff; /* Blue heading */
+  color: #007bff;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -48,9 +51,9 @@ h2 {
 }
 
 .filter-input {
-  padding: 12px 20px; /* Increased padding */
+  padding: 10px 15px;
   margin-bottom: 20px;
-  border: 1px solid #ccc; /* Light gray border */
+  border: 1px solid #ccc;
   border-radius: 30px;
   font-size: 16px;
   width: 100%;
@@ -60,8 +63,8 @@ h2 {
 }
 
 .filter-input:focus {
-  border-color: #007bff; /* Blue border on focus */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow */
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .spending-list {
@@ -78,29 +81,49 @@ h2 {
   align-items: center;
   padding: 15px;
   margin-bottom: 10px;
-  background-color: #f8f9fa; /* Light gray background */
-  border: 1px solid #e9ecef; /* Lighter gray border */
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .spending-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
 
 .customer-name {
   font-weight: 700;
-  color: #333; /* Dark gray text */
+  color: #333;
 }
 
 .customer-amount {
   font-size: 16px;
-  color: #007bff; /* Blue text for amount */
+  color: #007bff;
 }
 
 .filter-icon {
   margin-top: 10px;
   font-size: 20px;
-  color: #28a745; /* Green color for filter icon */
+  color: #28a745; 
+}
+
+.clear-filter-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.clear-filter-button:hover {
+  background-color: #c82333;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
